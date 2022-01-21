@@ -1,0 +1,59 @@
+.hero-section { 
+
+    @media screen and (max-width:767px) {
+        background: var(--main-background);
+        background-size: cover;
+        background-image:linear-gradient(to right, #2F303A66, #2F303A66), url(../images/bannerimgm.jpg);
+        padding: 118px 0 118px 0;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width:768px) {
+        background: var(--main-background);
+        background-size: cover;
+        background-image:linear-gradient(to right, #2F303A66, #2F303A66), url(../images/bannerimgtb.jpg);
+        padding: 118px 0 118px 0;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 200px 0 200px 0;
+        background: var(--main-background);
+        background-image:linear-gradient(to right, #2F303A66, #2F303A66), url(../images/bannerimg.jpg);
+        display: flex;
+        justify-content: center;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+
+    }
+    
+
+    .banner-inscription {
+
+        @media screen and (max-width:1199px) {
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            letter-spacing: 0.06em;
+            @include custom-text (24px, 900, 1.6, var(--banner-inscr-cl));
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 30px;
+            color: var(--banner-inscr-cl);
+            font-weight: var(--xl-weight);
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;}
+        }
+        
+
+    .banner {
+        text-align: center;} 
+}
